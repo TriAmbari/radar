@@ -141,6 +141,7 @@
                     Dapatkan pendidikan terbaik untuk masa depan yang lebih baik, Bergabunglah dengan sekolah kami sekarang, Ayo Segera daftarkan Putra Putri kesayangan anda</p>
             </div><br>
     <center><div class="row">
+        <div data-aos="fade-up" data-aos-delay="200">
         <img class="mb-5" src="img/logo.png" width=250>
         <div class="row justify-content-center">
             </div></center>
@@ -309,31 +310,7 @@
         e.preventDefault()
     }, !1);
 </script>
-<script>
-    function copyText(element) {
-        var range, selection, worked;
 
-        if (document.body.createTextRange) {
-            range = document.body.createTextRange();
-            range.moveToElementText(element);
-            range.select();
-        } else if (window.getSelection) {
-            selection = window.getSelection();
-            range = document.createRange();
-            range.selectNodeContents(element);
-            selection.removeAllRanges();
-            selection.addRange(range);
-        }
-
-        try {
-            document.execCommand('copy');
-            alert('Number copied');
-        } catch (err) {
-            alert('Unable to copy number');
-        }
-    }
-
-</script>
 </body>
 
 </html>
